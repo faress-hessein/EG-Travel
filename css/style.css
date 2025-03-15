@@ -1,0 +1,183 @@
+/* start Global Rules*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* end Global Rules*/
+
+/* start nav */
+nav {
+  background-color: #ddd;
+}
+nav .logo {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+}
+nav .logo span {
+  color: var(--main-color);
+}
+nav a {
+  color: black !important;
+  text-transform: capitalize;
+}
+.special-hading {
+  color: var(--main-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+:root {
+  --main-color: #dca96a;
+}
+/* end nav */
+
+/* start landing */
+.landing {
+  position: relative;
+}
+.landing video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+.landing h1 {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  color: beige;
+  font-weight: 700;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+/* end landing */
+
+/* start about */
+.about .image::before {
+  border-radius: 10px;
+  position: absolute;
+  content: "";
+  height: 300px;
+  width: 100%;
+  background-color: #0000004d;
+  top: 0;
+  left: 0;
+}
+.about img {
+  height: 300px;
+  width: 100%;
+}
+.about img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.about p {
+  line-height: 30px;
+  letter-spacing: 0.3px;
+}
+/* end about */
+
+/* start Destinations */
+.Destinations h5 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.Destinations .carousel-control-next,
+.Destinations .carousel-control-prev {
+  width: fit-content;
+  margin: 10px;
+}
+.Destinations img {
+  height: 500px;
+}
+/* end Destinations */
+
+/* start contact */
+.contact select,
+.contact input {
+  transition: 0.3s;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.contact select:focus-visible,
+.contact input:focus-visible {
+  outline: 1px solid black;
+}
+.contact button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 17px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: #ddd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact img {
+  height: 500px;
+}
+/* end contact */
+
+/* start footer */
+footer {
+  padding: 10px;
+  font-size: 17px;
+  background-color: #ddd;
+}
+footer img {
+  height: 30px;
+  width: 35px;
+}
+footer span {
+  color: var(--main-color);
+}
+@media (max-width: 400px) {
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* end footer */
