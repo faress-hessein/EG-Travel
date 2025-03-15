@@ -30,21 +30,28 @@ nav .logo {
 nav .logo span {
   color: var(--main-color);
 }
-nav a {
+nav ul a {
   color: black !important;
   text-transform: capitalize;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+nav ul a:hover {
+  color: var(--main-color) !important;
 }
 .special-hading {
-  color: var(--main-color);
+  color: #dca96a63;
   text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 50px;
+  width: fit-content;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 2px;
-  border-bottom: 1px solid;
   padding-bottom: 10px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", serif;
+  margin: 0 auto 50px;
 }
 :root {
   --main-color: #dca96a;
@@ -54,9 +61,19 @@ nav a {
 /* start landing */
 .landing {
   position: relative;
+  height: calc(100vh - 56px);
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #00000040;
 }
 .landing video {
-  height: 100vh;
+  height: calc(100vh - 56px);
   width: 100%;
   object-fit: cover;
   background-size: cover;
