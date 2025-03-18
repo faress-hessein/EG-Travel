@@ -63,6 +63,14 @@ nav ul a:hover {
   position: relative;
   height: calc(100vh - 56px);
 }
+.landing img {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  height: 180px;
+  width: 200px;
+}
 .landing::before {
   content: "";
   position: absolute;
@@ -99,7 +107,7 @@ nav ul a:hover {
 /* end landing */
 
 /* start about */
-.about .image::before {
+/* .about .image::before {
   border-radius: 10px;
   position: absolute;
   content: "";
@@ -108,10 +116,14 @@ nav ul a:hover {
   background-color: #0000004d;
   top: 0;
   left: 0;
-}
+} */
 .about img {
-  height: 300px;
+  height: 400px;
   width: 100%;
+}
+.about h3 img {
+  height: 45px;
+  width: 45px;
 }
 .about img {
   border-radius: 10px;
@@ -161,6 +173,10 @@ nav ul a:hover {
 .contact input:focus-visible {
   outline: 1px solid black;
 }
+.contact h2 img {
+  height: 45px;
+  width: 45px;
+}
 .contact button {
   display: block;
   width: 100%;
@@ -173,8 +189,11 @@ nav ul a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.contact img {
+.contact .image img {
   height: 500px;
+  min-width: 350px;
+  margin: auto;
+  display: block;
 }
 /* end contact */
 
